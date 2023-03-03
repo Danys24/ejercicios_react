@@ -2,6 +2,7 @@ import React from 'react';
 import { Task } from '../../models/task.class';
 import { levels } from '../../models/levels.enum';
 import TaskComponent  from '../pure/task';
+import '../../styles/task.scss';
 
 const TaskList = () => {
 
@@ -9,7 +10,7 @@ const TaskList = () => {
 
 	return (
 		<div>
-			<h1>Lista de Tareas</h1>
+			<h1 className="task-title">Lista de Tareas</h1>
 			<div>
 			   <TaskComponent task={task1}></TaskComponent>
 			</div>
