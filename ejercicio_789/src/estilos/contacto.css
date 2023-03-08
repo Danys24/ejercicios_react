@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(130, 200, 150);
+}
+
+.App{
+	background-color: rgb(130, 200, 150);
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	height: 100%;
+
+}
+
+.titulo{
+	color: rgb(80, 80, 80);
+}
+
+.crear-contacto-input{
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+   gap: 0.2rem;
+}
+
+.crear-contacto-input input{
+	border: none;
+	border-radius: 5px;
+	width: 10rem;
+	height: 1.3rem;
+	padding: 0.4rem;
+	outline: none;
+}
+
+.crear-contacto-input input:active{
+	color: white;
+}
+
+.crear-contacto-input label{
+	color: rgb(90, 90, 90);
+}
+
+.contacto-form{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	gap: 1rem;
+	padding: 0.5rem 2rem;
+}
+
+.btn-crear{
+	background-color: rgb(25,40,45);
+	color: yellowgreen;
+	width: 5rem;
+	height: 2rem;
+	border: none;
+	border-radius: 5px;
+}
+
+.crear-contacto{
+    background-color: rgb(225,230,225);
+    padding-bottom: 1rem;
+    margin: 0;
+    border-radius: 5px;
+    width: 45rem;
+
+}
+
+.titulo-contacto{
+	padding: 0.5rem 2rem;
+	color: rgb(100,100,100);
+	text-align: left;
+}
+
+.crear-contacto-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: 1rem;
+}
+
+.tabla-contactos{
+     background-color: ;
+     background-color: rgb(225,230,225);
+     padding: 1.5rem;
+     border-collapse: collapse;
+     border-radius: 5px;
+     width: 45rem;
+}
+
+
+th{
+	color: rgb(60, 60, 60);
+	border-bottom: 2px solid rgb(30,30,30);
+	padding: 1rem 2.45rem;
+}
+
+td{
+	color: rgb(60, 60, 60);
+	text-align: center;
+	font-size: 0.8rem;
+	border-bottom: 0.5px solid rgb(180,180,180);
+	padding: 0.7rem;
+}
+
+
+
