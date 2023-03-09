@@ -5,7 +5,8 @@ import './App.css';
 //import Greeting from './components/pure/greeting';
 //import Greetingf from './components/pure/greetingF';
 //import Father from './components/container/father';
-import TaskList from './components/container/task_list';
+import RenderConditionalComponent from './components/pure/renderizadoCondicional';
+//import TaskList from './components/container/task_list';
 
 
 function App() {
@@ -15,12 +16,10 @@ function App() {
        {/* <img src={logo} className="App-logo" alt="logo" />*/}
         {/*<Greeting name="Danys"></Greeting>*/}
         {/*<Greetingf name="Danys"></Greetingf>*/}   
-     {/* </header>*/}
-        
-     {/*<Father></Father>*/}
-
-        
-         <TaskList></TaskList>
+     {/* </header>*/}       
+     {/*<Father></Father>*/}       
+     {/* <TaskList></TaskList>*/}  
+         <RenderConditionalComponent></RenderConditionalComponent>
 
     </div>
   );
