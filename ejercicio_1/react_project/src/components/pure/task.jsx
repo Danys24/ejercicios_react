@@ -7,7 +7,7 @@ import '../../styles/task.scss';
 
 const TaskComponent = ({task, complete, remove}) => {
 
-     function taskLevelBadge(){
+   function taskLevelBadge(){
     	  switch (task.level) {
     	  	case levels.NORMAL:
     	  		return(
@@ -36,20 +36,19 @@ const TaskComponent = ({task, complete, remove}) => {
     	  	default:
     	  		break;
     	  }
-     }
+   }
 
-     function taskIconCompleted(){
+   function taskIconCompleted(){
         if (task.completed) {
         	 return (<i className = "bi-toggle-on" style={{color:'green'}} onClick={() => complete(task)}></i>);
         } else{
            return (<i className = "bi-toggle-off" style={{color:'grey'}} onClick={() => complete(task)}></i>);
         }
-     }
-
-
+   }
+   
 	return (
 
-          <tr className = "fw-normal">
+          <tr className = "fw-normal " className={task.completed ? 'task-completed' : 'task-pending'}>
           	<th><span className= "ms-2">{task.name}</span></th>
           	<td className = "align-middle">
           	    <span>{task.description}</span>

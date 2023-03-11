@@ -1,9 +1,15 @@
-.task-name{
-	font-weight: bold;
-	color: red;
+
+.task-action {
+	cursor: pointer;
 }
 
-.task-title{
-	color: green;
-	background-color: white;
+.task-completed{
+	color: rgb(10, 250, 10);
+	text-decoration: line-through;
+   
+}
+
+.task-pending {
+    font-weight: bold;
+    color: tomato;
 }

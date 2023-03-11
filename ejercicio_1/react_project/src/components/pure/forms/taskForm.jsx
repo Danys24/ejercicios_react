@@ -20,19 +20,33 @@ const TaskForm = ({add}) => {
         add(newTask);
     }
 
+    const normalStyle = {
+        color: 'blue',
+        fontWeight: 'bold'
+    }
+
+    const urgentStyle = {
+        color: 'yellow',
+        fontWeight: 'bold'
+    }
+
+    const blockingStyle = {
+        color: 'red',
+        fontWeight: 'bold'
+    }
+
     return (
     	<form onSubmit={addTask} className='d-flex flex-fill justify-content align-items-center mb-4'>
              <div className='form-outline flex-fill'>
                   <input ref={nameRef} id='inputName' type='text' className='form-control form-control-lg' required autoFocus placeholder='Task name' />
                   <input ref={descriptionRef} id='inputDescription' type='text' className='form-control form-control-lg' required placeholder='Task Description' />
-                  <label htmlFor='selectLevel' className='sr-only'>Priority</label>
-                  <select ref={levelRef} defaultValue={levels.NORMAL} id='selectLevel'>
-                          <option value={levels.NORMAL}>Normal</option>
-                          <option value={levels.URGENT}>Urgent</option>
-                          <option value={levels.BLOCKING}>Blocking</option>
+                  <select className='form-control form-control-lg' ref={levelRef} defaultValue={levels.NORMAL} id='selectLevel'>
+                          <option style={normalStyle} value={levels.NORMAL}>Normal</option>
+                          <option style={urgentStyle} value={levels.URGENT}>Urgent</option>
+                          <option style={blockingStyle} value={levels.BLOCKING}>Blocking</option>
                   </select>
-             </div>  
-             <button type='submit' className='btn btn-success btn-lg ms-2'>add</button>           
+                  <button type='submit' className='btn btn-success btn-lg ms-2'>Create Task</button>
+             </div>             
     	</form>       
     )
 };
