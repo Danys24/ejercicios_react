@@ -14,7 +14,7 @@ const TaskFormik = ({ add }) => {
 	const initialValues = {
 		nombre: '',
 		descripcion: '',
-      completed: false,
+    completed: false,
 		nivel: levels.NORMAL
 	}
 
@@ -58,7 +58,7 @@ const TaskFormik = ({ add }) => {
                    	       handleBlur }) => (
                    	          <Form>
                    	              <label htmlFor="nombre">Nombre Tarea:</label>
-                                   <Field type='text' id='nombre' name='nombre' placeholder='Tarea ejemplo' />
+                                  <Field type='text' id='nombre' name='nombre' placeholder='Tarea ejemplo' />
                                    {
                                      errors.nombre && touched.nombre && 
                                       (
