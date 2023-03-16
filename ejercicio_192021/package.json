@@ -1,5 +1,5 @@
 {
-  "name": "react_project",
+  "name": "ejercicio_192021",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,16 +11,10 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.3.4",
-    "bootstrap": "^5.2.3",
-    "bootstrap-icons": "^1.10.3",
-    "clsx": "^1.2.1",
-    "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "yup": "^1.0.2"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -45,8 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "sass": "^1.58.3"
   }
 }

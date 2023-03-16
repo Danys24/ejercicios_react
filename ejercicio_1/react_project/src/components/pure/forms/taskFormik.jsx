@@ -57,8 +57,8 @@ const TaskFormik = ({ add }) => {
                    	       handleChange,
                    	       handleBlur }) => (
                    	          <Form>
-                   	              <label htmlFor="nombre">Nombre Tarea:</label>
-                                  <Field type='text' id='nombre' name='nombre' placeholder='Tarea ejemplo' />
+                   	               <label htmlFor="nombre">Nombre Tarea:</label>
+                                   <Field type='text' id='nombre' name='nombre' placeholder='Tarea ejemplo' />
                                    {
                                      errors.nombre && touched.nombre && 
                                       (

@@ -10,6 +10,8 @@ import './App.css';
 //import RegisterFormik from './components/pure/forms/registerFormik';
 //import TaskFormik from './components/pure/forms/taskFormik';
 import TaskList from './components/container/task_list';
+import FetchExample from './components/pure/fetchExample';
+import AxiosExample from './components/pure/axiosExample';
 
 
 function App() {
@@ -25,7 +27,9 @@ function App() {
       {/*<LoginFormik></LoginFormik>*/} 
       {/*<RegisterFormik></RegisterFormik>*/}
       {/*   <TaskFormik></TaskFormik>*/}
-         <TaskList></TaskList>
+      {/*  <TaskList></TaskList>  */}
+      {/* <FetchExample></FetchExample> */}
+      <AxiosExample></AxiosExample>
     </div>
   );
 }
