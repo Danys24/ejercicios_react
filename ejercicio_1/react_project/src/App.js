@@ -12,6 +12,7 @@ import './App.css';
 import TaskList from './components/container/task_list';
 import FetchExample from './components/pure/fetchExample';
 import AxiosExample from './components/pure/axiosExample';
+import AxiosCRUDExample from './components/pure/axiosCRUDExample';
 
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
       {/*   <TaskFormik></TaskFormik>*/}
       {/*  <TaskList></TaskList>  */}
       {/* <FetchExample></FetchExample> */}
-      <AxiosExample></AxiosExample>
+      {/*<AxiosExample></AxiosExample> */}
+      <AxiosCRUDExample></AxiosCRUDExample>
     </div>
   );
 }

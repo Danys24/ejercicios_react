@@ -33,13 +33,12 @@ const AxiosExample = () => {
            	 	    <h3> email: {user.email}</h3>
            	 	</div>
            	 )
-             : (
-             	<div>
-             	  <button onClick={obtainUser}>Create Random User</button>
-             	  <p>Genera un nuevo usuario</p>
-             	</div>
-             	)
+             : null
            }
+           <div>
+                <button onClick={obtainUser}>Create Random User</button>
+                <p>Genera un nuevo usuario</p>
+           </div>
         </div>
     );
 };
